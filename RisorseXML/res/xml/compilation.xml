@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<compilation>
+
+   <brano id="1">
+   <titolo>Immigrant song</titolo>
+   <autore>Led Zeppelin</autore>
+   <genere>Rock</genere>
+   </brano>
+   
+   <brano id="2">
+   <titolo>Nothing man</titolo>
+   <autore>Pearl jam</autore>
+   <genere>Grunge</genere>
+   </brano>
+   
+   <brano id="3">
+   <titolo>Lieve</titolo>
+   <autore>Marlene Kuntz</autore>
+   <genere>Indie Rock</genere>
+   </brano>
+   
+</compilation>
