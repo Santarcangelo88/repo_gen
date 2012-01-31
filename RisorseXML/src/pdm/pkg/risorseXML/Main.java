@@ -11,6 +11,9 @@ import android.util.Log;
 
 public class Main extends Activity {
     /** Called when the activity is first created. */
+	String tagName;
+	String elementValue;
+	String id;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,12 +27,12 @@ public class Main extends Activity {
     	int eventType = parser.getEventType();
     	while (eventType != XmlResourceParser.END_DOCUMENT) {
     		if (eventType == XmlResourceParser.START_TAG) {
-    			String tagName = parser.getName();
+    			tagName = parser.getName();
     			if ("brano".equals(tagName)) {
-    				String id = parser.getAttributeValue(0);
+    				id = parser.getAttributeValue(0);
     			}
     		}else if (eventType == XmlResourceParser.TEXT) {
-    			String elementValue = parser.getText();
+    		 elementValue = parser.getText();
     		}
     		eventType = parser.next();
     	}
